@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggspedisi - Telur Segar Berkualitas Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'egg-yellow': '#FFD700',
+                        'egg-cream': '#FFF8DC',
+                        'warm-yellow': '#FFEB3B'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .egg-shadow {
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        .bounce-slow {
+            animation: bounce 3s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-egg-cream to-white min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="eggspedisi.png" alt="Logo Eggspedisi" class="w-12 h-12 object-contain rounded-full" />
+                    <h1 class="text-2xl font-bold text-gray-800">Eggspedisi</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#produk" class="text-gray-700 hover:text-egg-yellow transition-colors">Produk</a>
+                    <a href="#keunggulan" class="text-gray-700 hover:text-egg-yellow transition-colors">Keunggulan</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-egg-yellow transition-colors">Kontak</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto text-center">
+           <div class="float mb-8 flex justify-center">
+    <img src="eggspedisi.png" class="w-32 h-32 object-contain rounded-full bounce-slow" />
+
+</div>
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                Telur Segar <span class="text-egg-yellow">Premium</span><br>
+                Langsung dari Peternakan
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Dapatkan telur berkualitas tinggi dengan harga grosir terbaik. Segar, bergizi, dan terpercaya untuk kebutuhan bisnis Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6281906886868?text=Halo,%20saya%20tertarik%20dengan%20telur%20Anda" 
+       target="_blank" rel="noopener noreferrer"
+       class="bg-egg-yellow hover:bg-yellow-500 text-gray-800 font-bold py-4 px-8 rounded-full transition-all duration-300 egg-shadow hover:shadow-xl transform hover:scale-105">
+
+        🛒 Pesan Sekarang
+    </a>
+
+                <a href="https://wa.me/6281906886868?text=Halo,%20saya%20tertarik%20dengan%20telur%20Anda" 
+       target="_blank" rel="noopener noreferrer"
+       class="bg-white hover:bg-gray-50 text-gray-800 font-bold py-4 px-8 rounded-full border-2 border-egg-yellow transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center">
+        📞 Hubungi Kami
+    </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                Produk <span class="text-egg-yellow">Unggulan</span> Kami
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Slot Gambar Produk 1 -->
+               <div class="bg-egg-cream rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+    <!-- Gambar -->
+    <div class="w-full h-48 bg-yellow-100 rounded-xl mb-4 overflow-hidden border-2 border-dashed border-yellow-400 flex items-center justify-center">
+        <img src="telur 1.jpeg" alt="Telur Ayam Kampung" class="w-full h-full object-cover rounded-xl">
+    </div>
+
+    <!-- Konten -->
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Telur Ayam Kampung</h3>
+    <p class="text-gray-600 mb-4">Telur segar dari ayam kampung pilihan dengan kualitas premium</p>
+    <div class="text-2xl font-bold text-egg-yellow">Rp 45.000/kg</div>
+</div>
+
+                <!-- Slot Gambar Produk 2 -->
+                <div class="bg-egg-cream rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+    <!-- Gambar -->
+    <div class="w-full h-48 bg-yellow-100 rounded-xl mb-4 overflow-hidden border-2 border-dashed border-yellow-400 flex items-center justify-center">
+        <img src="telur 2.jpeg" alt="Telur Omega" class="w-full h-full object-cover rounded-xl">
+    </div>
+
+    <!-- Konten -->
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Telur Omega</h3>
+    <p class="text-gray-600 mb-4">Telur Omega dari ayam pilihan dengan kualitas premium</p>
+    <div class="text-2xl font-bold text-egg-yellow">Rp 45.000/kg</div>
+</div>
+
+                <!-- Slot Gambar Produk 3 -->
+                <div class="bg-egg-cream rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+    <!-- Gambar -->
+    <div class="w-full h-48 bg-yellow-100 rounded-xl mb-4 overflow-hidden border-2 border-dashed border-yellow-400 flex items-center justify-center">
+        <img src="telur 3.jpeg" alt="Telur Omega" class="w-full h-full object-cover rounded-xl">
+    </div>
+
+    <!-- Konten -->
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Telur Biasa</h3>
+    <p class="text-gray-600 mb-4">Telur Biasa dari ayam pilihan dengan kualitas premium</p>
+    <div class="text-2xl font-bold text-egg-yellow">Rp 45.000/kg</div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-16 bg-gradient-to-r from-egg-cream to-yellow-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                Mengapa Pilih <span class="text-egg-yellow">Eggspedisi</span>?
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-egg-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">✨</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kualitas Premium</h3>
+                    <p class="text-gray-600">Telur pilihan dengan standar kualitas tertinggi</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-egg-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">🚚</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Pengiriman Cepat</h3>
+                    <p class="text-gray-600">Pengiriman hari yang sama untuk area Yogyakarta</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-egg-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">💰</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Harga Grosir</h3>
+                    <p class="text-gray-600">Harga terbaik untuk pembelian dalam jumlah besar</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-egg-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">🛡️</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Garansi Segar</h3>
+                    <p class="text-gray-600">Jaminan kesegaran demi kepuasan pelanggan 100%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                Kata <span class="text-egg-yellow">Pelanggan</span> Kami
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Slot untuk foto testimoni 1 -->
+                <div class="bg-egg-cream rounded-2xl p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-full flex items-center justify-center border-2 border-dashed border-yellow-400 flex-shrink-0">
+                            <span class="text-2xl">👤</span>
+                        </div>
+                        <div>
+                            <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+                            <p class="text-gray-700 mb-3">"Kualitas telur sangat bagus dan harga grosir yang kompetitif. Sudah langganan 2 tahun!"</p>
+                            <p class="font-bold text-gray-800">- Ibu Sari, Pemilik Warung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slot untuk foto testimoni 2 -->
+                <div class="bg-egg-cream rounded-2xl p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-full flex items-center justify-center border-2 border-dashed border-yellow-400 flex-shrink-0">
+                            <span class="text-2xl">👤</span>
+                        </div>
+                        <div>
+                            <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+                            <p class="text-gray-700 mb-3">"Pengiriman selalu tepat waktu dan telur sampai dalam kondisi segar. Recommended!"</p>
+                            <p class="font-bold text-gray-800">- Pak Budi, Pemilik Restoran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-egg-yellow to-warm-yellow">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">
+            Siap Memulai Bisnis dengan Telur Berkualitas?
+        </h2>
+        <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Hubungi kami sekarang untuk mendapatkan penawaran khusus dan konsultasi gratis!
+        </p>
+        <a href="https://wa.me/6281906886868" target="_blank" rel="noopener noreferrer"
+           class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-bold py-4 px-8 rounded-full transition-all duration-300 egg-shadow hover:shadow-xl transform hover:scale-105">
+            📞 Hubungi Sekarang Juga!
+        </a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kontak -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-egg-yellow">Kontak Person</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">📞</span>
+                            <span>+62 819-0688-6868</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">📱</span>
+                            <span>+62 819-0688-6868</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">✉️</span>
+                            <span>info@eggspedisi.co.id</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">👤</span>
+                            <span>Pak Iqbal (Manager)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alamat -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-egg-yellow">Alamat</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-egg-yellow mt-1">📍</span>
+                            <div>
+                                <p>Jl. Cendrawasih No. 656A</p>
+                                <p>Kelurahan Wonocatur, Kecamatan Banguntapan</p>
+                                <p>Yogyakarta 55198</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">🕒</span>
+                            <span>Senin - Sabtu: 06:00 - 18:00</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-egg-yellow">🕒</span>
+                            <span>Minggu: 06:00 - 12:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Sosial -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-egg-yellow">Media Sosial</h3>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center space-x-3 hover:text-egg-yellow transition-colors">
+                            <span class="text-2xl">📘</span>
+                            <span>Facebook: Eggspedisi Grosir</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 hover:text-egg-yellow transition-colors">
+                            <span class="text-2xl">📷</span>
+                            <span>Instagram: @eggspedisi_grosir</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 hover:text-egg-yellow transition-colors">
+                            <span class="text-2xl">💬</span>
+                            <span>WhatsApp: +62 819-0688-6868</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 hover:text-egg-yellow transition-colors">
+                            <span class="text-2xl">🐦</span>
+                            <span>Twitter: @eggspedisi_id</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <img src="eggspedisi.png" alt="Logo Eggspedisi" class="w-12 h-12 object-contain rounded-full" />
+
+                    <span class="text-xl font-bold">Eggspedisi Grosir</span>
+                </div>
+                <p class="text-gray-400">© 2024 Eggspedisi Grosir. Semua hak dilindungi. Telur segar, bisnis sukses!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animasi hover untuk tombol
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'967204603499fd80',t:'MTc1Mzg0ODc0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
